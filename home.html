@@ -24,7 +24,7 @@
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary"
-            ><i class="bi bi-book-half"></i>Net Ninja Pro- the book</span
+            ><i class="bi bi-book-half px-3"></i>Net Ninja Pro- the book</span
           >
         </a>
         <!-- toggle button for mobile nav -->
@@ -61,7 +61,7 @@
       </div>
     </nav>
     <!-- main image & intro text -->
-    <section id="intro">
+    <section id="intro" class="mt-5">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
           <!-- if you reached the medium break point your text will be adjusted on the left -->
@@ -249,11 +249,11 @@
       </div>
     </section>
     <!-- reviews -->
-    <section id="reviews" class="gb-light">
+    <section id="reviews" class="bg-light">
       <div class="container-lg">
         <div class="text-center">
-          <h2><i class="bi bi-star-fill px-2"></i>Book Reviews</h2>
-          <p class="lead">what my students said about the book..</p>
+          <h2><i class="bi bi-star-fill px-2 text-warning"></i>Book Reviews</h2>
+          <p class="lead">What my students said about the book.....</p>
         </div>
         <div class="row justify-content-center my-5">
           <div class="col-lg-8">
@@ -261,7 +261,7 @@
             <ul class="list-group">
               <li class="list-group-item">
                 <div class="rating">
-                  <div class="py-2">
+                  <div class="py-2 text-warning">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -277,7 +277,7 @@
               </li>
               <li class="list-group-item">
                 <div class="rating">
-                  <div class="py-2">
+                  <div class="py-2 text-warning">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -293,7 +293,7 @@
               </li>
               <li class="list-group-item">
                 <div class="rating">
-                  <div class="py-2">
+                  <div class="py-2 text-warning">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -309,7 +309,7 @@
               </li>
               <li class="list-group-item">
                 <div class="rating">
-                  <div class="py-2">
+                  <div class="py-2 text-warning">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -333,7 +333,83 @@
       <div class="container-lg">
         <div class="text-center">
           <h2>Get in touch</h2>
-          <p class="lead">Questions?fill out the form to contact me directly</p>
+          <p class="lead">
+            Questions? fill out the form to contact me directly
+          </p>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6 text-start">
+              <form>
+                <label class="form-label" for="email" id="email">Email:</label>
+                <!-- using input group and input group text to add icons beside the fields -->
+                <div class="input-group mb-2">
+                  <div class="input-group-text">
+                    <span><i class="bi bi-envelope-at-fill"></i></span>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="e.g. JohnDoe@example.com"
+                  />
+                </div>
+                <label class="form-label" for="name" id="name"
+                  >First Name:</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-text">
+                    <span><i class="bi bi-person-fill"></i></span>
+                  </div>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="fname"
+                    placeholder="e.g. John"
+                  />
+                </div>
+                <label class="form-label" for="name" id="name"
+                  >Family Name:</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-text">
+                    <span><i class="bi bi-person-fill"></i></span>
+                  </div>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="Sname"
+                    placeholder="e.g. Doe"
+                  />
+                </div>
+                <label class="form-label" for="subject"
+                  >What's the question about?</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-text">
+                    <span><i class="bi bi-question-circle-fill"></i></span>
+                  </div>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>pricing query</option>
+                    <option value="content">content query</option>
+                    <option value="other">other</option>
+                  </select>
+                  <!-- floating forms -->
+                </div>
+                <div class="form-floating mb-4 mt-5">
+                  <label class="form-label" for="query">Your query ....</label>
+                  <textarea
+                    id="query"
+                    class="form-control"
+                    style="height: 150px"
+                  ></textarea>
+                  <div class="my-2 text-center">
+                    <button class="btn btn-warning" type="submit">
+                      submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
